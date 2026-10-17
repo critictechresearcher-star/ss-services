@@ -10,7 +10,7 @@
 <meta property="og:title" content="Sri Srinivasa Services – Home Appliance Spares &amp; Service, Chennai">
 <meta property="og:description" content="AC, refrigerator, washing machine, microwave and RO purifier service and spare parts enquiries. Call or WhatsApp 9962177933.">
 <meta property="og:locale" content="en_IN">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='bg' cx='50%25' cy='50%25' r='60%25'%3E%3Cstop offset='0%25' stop-color='%2347d7ff'/%3E%3Cstop offset='100%25' stop-color='%230044aa'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23bg)'/%3E%3Ctext x='32' y='31' font-family='Arial Black,Impact,sans-serif' font-weight='900' font-size='22' text-anchor='middle' fill='%23ff00b7' stroke='%23ffffff' stroke-width='3.5' paint-order='stroke fill'%3ESSS%3C/text%3E%3Crect x='6' y='40' width='52' height='16' rx='8' fill='%23e60000' stroke='%23ffcc00' stroke-width='1.8'/%3E%3Ctext x='32' y='51' font-family='Arial Black,sans-serif' font-weight='900' font-size='7.5' text-anchor='middle' fill='%23fff000'%3ESPARES%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 84'%3E%3Cg transform='rotate(-14 60 42)'%3E%3Cellipse cx='55.5' cy='42' rx='50' ry='32.5' fill='%23EE0D15'/%3E%3Cellipse cx='62' cy='42' rx='47.5' ry='30.5' fill='%23ffffff' stroke='%2300269A' stroke-width='5.5'/%3E%3Cg font-family='Georgia,Times New Roman,serif' font-weight='900' font-size='44' fill='%23EE0D15' stroke='%23ffffff' stroke-width='2.2' paint-order='stroke fill' text-anchor='middle'%3E%3Ctext x='41' y='57'%3ES%3C/text%3E%3Ctext x='62' y='57'%3ES%3C/text%3E%3Ctext x='83' y='57'%3ES%3C/text%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -75,11 +75,12 @@ ul{margin:0;padding:0;list-style:none}
 .announce .dot{color:var(--cyan);margin:0 8px}
 header.site{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .25s,box-shadow .25s}
 header.site.scrolled{border-color:var(--line);box-shadow:0 6px 24px rgba(16,42,67,.07)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
-.brand{display:inline-flex;align-items:center;min-width:0}
-.brand-logo{height:56px;width:auto;max-width:250px;flex:none;border-radius:10px;box-shadow:0 4px 12px rgba(16,42,67,.14);transition:transform .2s}
-.brand:hover .brand-logo{transform:scale(1.02)}
-footer .brand-logo{height:62px;max-width:275px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-mark{width:62px;height:44px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.brand-text b{font-size:1.05rem;color:var(--navy);font-weight:800;letter-spacing:-.01em;white-space:nowrap}
+.brand-text small{font-size:.72rem;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 .menu{display:flex;align-items:center;gap:6px}
 .menu a.link{padding:10px 14px;border-radius:999px;font-weight:600;font-size:.95rem;color:var(--text);transition:background .2s,color .2s}
 .menu a.link:hover,.menu a.link.active{background:var(--bg);color:var(--blue)}
@@ -245,6 +246,8 @@ form .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 /* Footer */
 footer{background:#0B1F33;color:#a9bdd3;padding:64px 0 28px}
 .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:40px}
+footer .brand-text b{color:#fff}
+footer .brand-text small{color:#8da5be}
 footer p{margin-top:16px;font-size:.92rem;max-width:320px}
 footer h4{color:#fff;font-size:.95rem;margin-bottom:16px;letter-spacing:.02em}
 footer li{margin-bottom:10px;font-size:.92rem}
@@ -304,11 +307,11 @@ footer a:hover{color:var(--cyan)}
   body{padding-bottom:76px}
   .to-top{right:14px;bottom:88px}
   .cta{padding-bottom:60px}
-  .brand-logo{height:48px;max-width:210px}
+  .brand-text b{font-size:.98rem}
 }
 @media (max-width:480px){
   .hl-grid{grid-template-columns:1fr}
-  .brand-logo{height:42px;max-width:185px}
+  .brand-text small{display:none}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -344,78 +347,19 @@ footer a:hover{color:var(--cyan)}
     <symbol id="a-micro" viewBox="0 0 64 64"><rect x="4" y="14" width="56" height="36" rx="6"/><rect x="10" y="20" width="32" height="24" rx="3"/><path d="M50 22h4M50 30h4M50 38h4"/></symbol>
     <symbol id="a-ro" viewBox="0 0 64 64"><rect x="14" y="4" width="36" height="46" rx="8"/><path d="M22 14h20M22 20h20"/><path d="M32 30c-4 5-6 8-6 11a6 6 0 0 0 12 0c0-3-2-6-6-11z"/><path d="M24 50v8M40 50v8"/></symbol>
 
-    <!-- Exact Sri Srinivasa Services Banner Logo -->
-    <symbol id="logo" viewBox="0 0 460 112">
-      <defs>
-        <radialGradient id="sss-bg" cx="50%" cy="50%" r="65%">
-          <stop offset="0%" stop-color="#6be5ff"/>
-          <stop offset="45%" stop-color="#0088ff"/>
-          <stop offset="100%" stop-color="#003899"/>
-        </radialGradient>
-        <linearGradient id="sss-pink" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#ff33cc"/>
-          <stop offset="55%" stop-color="#ec00a8"/>
-          <stop offset="100%" stop-color="#b80080"/>
-        </linearGradient>
-        <linearGradient id="sss-red" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#ff1e00"/>
-          <stop offset="100%" stop-color="#c20000"/>
-        </linearGradient>
-        <filter id="sss-3d" x="-10%" y="-20%" width="120%" height="150%">
-          <feDropShadow dx="0" dy="2.5" stdDeviation="0" flood-color="#b8d4ff" flood-opacity="1"/>
-          <feDropShadow dx="0" dy="3.5" stdDeviation="2.5" flood-color="#001b52" flood-opacity="0.85"/>
-        </filter>
-        <clipPath id="sss-clip">
-          <rect width="460" height="112" rx="16"/>
-        </clipPath>
-      </defs>
-      <g clip-path="url(#sss-clip)">
-        <rect width="460" height="112" fill="url(#sss-bg)"/>
-        <!-- Sunburst rays matching the banner -->
-        <g fill="#ffffff" opacity="0.16">
-          <polygon points="230,56 -20,-20 35,-20"/>
-          <polygon points="230,56 95,-20 150,-20"/>
-          <polygon points="230,56 210,-20 250,-20"/>
-          <polygon points="230,56 310,-20 365,-20"/>
-          <polygon points="230,56 425,-20 480,-20"/>
-          <polygon points="230,56 480,25 480,65"/>
-          <polygon points="230,56 480,95 425,130"/>
-          <polygon points="230,56 355,130 295,130"/>
-          <polygon points="230,56 250,130 210,130"/>
-          <polygon points="230,56 165,130 105,130"/>
-          <polygon points="230,56 35,130 -20,95"/>
-          <polygon points="230,56 -20,65 -20,25"/>
+    <!-- Logo -->
+    <symbol id="logo" viewBox="0 0 120 84">
+      <g transform="rotate(-14 60 42)">
+        <!-- Red crescent shadow on left -->
+        <ellipse cx="55.5" cy="42" rx="50" ry="32.5" fill="#EE0D15"/>
+        <!-- White oval with royal blue ring -->
+        <ellipse cx="62" cy="42" rx="47.5" ry="30.5" fill="#ffffff" stroke="#00269A" stroke-width="5.2"/>
+        <!-- Overlapping red SSS letters -->
+        <g font-family="Georgia, 'Times New Roman', Times, serif" font-weight="900" font-size="45" fill="#EE0D15" stroke="#ffffff" stroke-width="2.4" stroke-linejoin="round" paint-order="stroke fill" text-anchor="middle" transform="scale(1.06, 1) translate(-3.5, 0)">
+          <text x="41" y="57">S</text>
+          <text x="62" y="57">S</text>
+          <text x="83" y="57">S</text>
         </g>
-        <!-- Main Title: SRI SRINIVASA SERVICES -->
-        <text x="230" y="47"
-              text-anchor="middle"
-              textLength="428"
-              lengthAdjust="spacingAndGlyphs"
-              font-family="'Arial Black', Impact, 'Plus Jakarta Sans', sans-serif"
-              font-weight="900"
-              font-size="31"
-              fill="url(#sss-pink)"
-              stroke="#ffffff"
-              stroke-width="6.5"
-              stroke-linejoin="round"
-              paint-order="stroke fill"
-              filter="url(#sss-3d)">SRI SRINIVASA SERVICES</text>
-        <!-- Red Pill Badge: SPARES & SERVICE -->
-        <rect x="52" y="61" width="356" height="40" rx="20"
-              fill="url(#sss-red)"
-              stroke="#ffd000"
-              stroke-width="3"/>
-        <text x="230" y="89"
-              text-anchor="middle"
-              textLength="306"
-              lengthAdjust="spacingAndGlyphs"
-              font-family="'Arial Black', 'Plus Jakarta Sans', sans-serif"
-              font-weight="900"
-              font-size="24"
-              fill="#fff000"
-              stroke="#7a0000"
-              stroke-width="1.5"
-              paint-order="stroke fill">SPARES &amp; SERVICE</text>
       </g>
     </symbol>
   </defs>
@@ -425,8 +369,9 @@ footer a:hover{color:var(--cyan)}
 
 <header class="site" id="top">
   <div class="wrap nav">
-    <a class="brand" href="#home" aria-label="Sri Srinivasa Services – Spares &amp; Service – home">
-      <svg class="brand-logo" viewBox="0 0 460 112" role="img" aria-label="Sri Srinivasa Services – Spares &amp; Service"><use href="#logo"/></svg>
+    <a class="brand" href="#home" aria-label="Sri Srinivasa Services – home">
+      <svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand-text"><b>Sri Srinivasa Services</b><small>Spares &amp; Service</small></span>
     </a>
     <nav aria-label="Primary">
       <div class="menu" id="menu">
@@ -789,8 +734,9 @@ footer a:hover{color:var(--cyan)}
   <div class="wrap">
     <div class="f-grid">
       <div>
-        <a class="brand" href="#home" aria-label="Sri Srinivasa Services – Spares &amp; Service – home">
-          <svg class="brand-logo" viewBox="0 0 460 112" role="img" aria-label="Sri Srinivasa Services – Spares &amp; Service"><use href="#logo"/></svg>
+        <a class="brand" href="#home" aria-label="Sri Srinivasa Services – home">
+          <svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg>
+          <span class="brand-text"><b>Sri Srinivasa Services</b><small>Spares &amp; Service</small></span>
         </a>
         <p>Home appliance spares and service enquiries for customers in Chennai.</p>
       </div>

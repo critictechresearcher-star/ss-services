@@ -280,9 +280,7 @@ footer a:hover{color:var(--cyan)}
   .menu{position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;align-items:stretch;gap:2px;padding:12px 20px 20px;border-bottom:1px solid var(--line);box-shadow:0 20px 30px rgba(16,42,67,.1);display:none}
   .menu.open{display:flex}
   .menu a.link{padding:14px 16px;font-size:1.02rem}
-  .menu .m-call{display:flex;margin-top:10px}
 }
-@media (min-width:861px){.menu .m-call{display:none}}
 @media (max-width:768px){
   section{padding:60px 0}
   .hero{padding:36px 0 64px}
@@ -297,8 +295,8 @@ footer a:hover{color:var(--cyan)}
   .panel{padding:24px 20px}
   .f-grid{grid-template-columns:1fr}
   .fab-wa{display:none}
-  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:95;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
-  .mbar .btn{padding:12px 10px;font-size:.95rem}
+  .mbar{display:flex;justify-content:center;align-items:center;gap:16px;position:fixed;left:0;right:0;bottom:0;z-index:95;padding:12px 14px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mbar .btn{padding:12px 24px;font-size:1rem;flex:0 1 auto;min-width:140px}
   body{padding-bottom:76px}
   .to-top{right:14px;bottom:88px}
   .cta{padding-bottom:60px}
@@ -375,7 +373,6 @@ footer a:hover{color:var(--cyan)}
         <a class="link" href="#brands">Brands</a>
         <a class="link" href="#about">About Us</a>
         <a class="link" href="#contact">Contact</a>
-        <a class="btn btn-primary btn-sm m-call" href="tel:+919962177933"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Call Now</a>
       </div>
     </nav>
     <div class="nav-cta">
